@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Author</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cc6fad79da.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="flex justify-left md:p-3">
+        <div class="text-white pl-2 content-center ">
+            <a href="index.html">
+            <i class="fa-solid fa-arrow-left-long block md:hidden"></i></a>
+        </div>
+        <div class="w-screen">
+            <h1 class="text-white text-2xl text-center">Featured Work</h1>
+        </div>
+    </header>
+
+    <div id="content-container" class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4"></div>
+
+
+    <script>
+        // Define the content data
+const data = [
+    { imageSrc: 'Source/front_end_work.png', title: 'Front-End Development', description: 'I create a login page with full of functionality. Here its work with log in and Create a new account. ' },
+    { imageSrc: 'Source/get_vehicle.png', title: 'Adnroid Development', description: 'Worked on "Get Vehicle," a platform for renting various types of vehicles, including cars, CNGs, bikes, and more. Contributed to both front-end and back-end development, ensuring a seamless user experience for browsing and booking rentals. Managed database operations using Firebase, enabling efficient data storage, retrieval, and real-time updates.' }
+];
+
+// Select the container
+const container = document.getElementById('content-container');
+
+// Loop through the data array and create each item
+data.forEach(item => {
+    // Create the outer div for each item
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'bg-white/40 w-full p-4 rounded shadow-lg';
+
+    // Create the image container
+    const imgContainer = document.createElement('div');
+    imgContainer.className = 'grid place-content-center mb-4';
+    const img = document.createElement('img');
+    img.src = item.imageSrc;
+    img.alt = item.title;
+    imgContainer.appendChild(img);
+
+    // Create the text container
+    const textContainer = document.createElement('div');
+    textContainer.className = 'text-justify';
+    const h1 = document.createElement('h1');
+    h1.className = 'text-2xl mb-2';
+    h1.textContent = item.title;
+    const p = document.createElement('p');
+    p.textContent = item.description;
+
+    // Append the title and paragraph to the text container
+    textContainer.appendChild(h1);
+    textContainer.appendChild(p);
+
+    // Append image and text containers to the outer div
+    itemDiv.appendChild(imgContainer);
+    itemDiv.appendChild(textContainer);
+
+    // Append the item to the main container
+    container.appendChild(itemDiv);
+});
+
+    </script>
+   
+      
+</body>
+</html>

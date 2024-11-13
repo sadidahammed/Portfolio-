@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Author</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cc6fad79da.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-white p-3">
+        <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+            <!-- Logo section -->
+            <div>
+                <a href="index.html"><h1 class="font-bold text-2xl pl-2 hidden md:block">Sadid</h1></a>
+                <a href="index.html"><h1 class="font-bold text-2xl pl-2 block md:hidden">Sadid Ahammed</h1></a>
+            </div>
+            
+            <!-- Navigation Links (Hidden on mobile, shown on desktop) -->
+            <div class="CornerLink z-5 gap-0 pr-4 hidden md:flex md:ml-auto space-x-6">
+                <a class="rounded-full" href="index.html">Home</a>
+                <a class="rounded-full" href="Featured_Work.html">Featured Work</a>
+                <a class="rounded-full" href="#About">About Me</a>
+                <a class="rounded-full" href="Contact.html">Contact</a>
+            </div>
+            <div>
+                <i id="hamburger-icon" class="fa-solid fa-bars pr-3 block md:hidden" ></i>
+            </div>
+
+            <!-- Mobile Popup Menu (Hidden by default, positioned to the right) -->
+            <div id="popup-navbar" class="fixed top-0 right-0 h-full bg-black bg-opacity-50 z-50 hidden">
+                <div class="bg-blue-500 bg-opacity-40 p-6 w-40 h-full text-white flex flex-col justify-between">
+            <!-- Navigation buttons -->
+            <div class="space-y-4 text-center">
+                <a href="#" class="block hover:text-gray-300">Home</a>
+                <a href="Featured_Work.html" class="block hover:text-gray-300">Featured Work</a>
+                <a href="#About" class="block hover:text-gray-300">About</a>
+                <a href="Contact.html" class="block hover:text-gray-300">Contact</a>
+            </div>
+        </div>     
+    </header>
+    <main>
+
+            <div class="h-screen bg-[url('Source/banner.jpg')] bg-cover bg-center">
+                <div class="grid place-content-center h-screen bg-white/40 bg-cover bg-center ">
+                    <h2 class="text-5xl font-bold z-10 text-center mb-11">Junior Web Developer based in Bangladesh</h2>
+                    <div class="flex gap-2 justify-center">
+                        <a href="Resume.html" class="text-center text-black border border-black p-3 text-1xl rounded-full w-24 hover:bg-white ">Resume</a>
+                        <a href="CV.html" class="text-center text-black border border-black p-3 text-1xl rounded-full w-24 hover:bg-white ">CV</a>
+                    </div>
+                </div>
+
+            </div>
+        
+        
+        <div class=" p-4 z-0 justify-center items-center ">
+            <div id="About" class="mt-20 mb-10 md:flex max-w-screen-xl mx-auto">
+              <!-- Image container with white background -->
+              <div class="bg-white p-4 object-cover rounded-lg w-70 md:w-80">
+                <img class="mx-auto h-60 w-70 object-cover md:mb-4" src="./Source/self.png" alt="">
+              </div>
+              <!-- Text container -->
+              <div class="pl-4">
+                <h3 class="text-[rgb(255,255,255)] text-[22px] font-bold text-justify">
+                  I’m Sadid Ahammed. I’m passionate about crafting exceptional websites. With a blend of design skills and coding expertise, I create unique online experiences that captivate users.
+                </h3>
+                <br>
+                <p class="text-justify text-[rgb(255,255,255)]">
+                  Looking for a top-notch web developer to revamp your hotel’s website? Look no further than Sadid. With years of experience and a keen eye for design, Sadid can take your site to the next level, helping you attract more visitors and boost your bookings.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <hr class="m-4">
+          <div class=" max-w-screen-xl mx-auto">
+            <h2 class=" text-5xl font-bold text-white-500 text-white z-10 ml-4 mb-10">Services</h2>
+          
+          <div class=" md:flex max-w-screen-xl mx-auto">
+            <div class="pl-4 text-blue-300">
+                <p class="text-[#8750fc]">01</p>
+                <h2 class="text-4xl font-bold text-white z-10 mb-2">Front End</h2>
+                <p class="text-justify md: pe-8">A Front-End Developer builds the visual and interactive parts of a website or web application. They use HTML, CSS, and JavaScript to create the layout, design, and user interactions. Their goal is to ensure the website looks good and works well across different devices and browsers, focusing on user experience (UX) and responsiveness. They often use frameworks like React, Vue.js, and Angular to streamline development.</p>
+                <ul class="md: pe-8">
+                    <li>I craft visually stunning, responsive websites that provide seamless experiences across all devices and browsers.</li>
+                    <li>With a keen eye for design and user experience, I transform your ideas into interactive, high-performance web solutions.</li>
+                    <li>I specialize in building fast, modern websites that engage users and drive conversions, ensuring your brand stands out online.</li>
+                </ul>
+            </div>
+            <div class="p-4 items-center flex">
+                <img class="min-w-64 mt-3" src="Source/front_end.png" alt="">
+            </div>
+          </div>
+
+          <hr class="m-4">
+
+
+          
+          <div class="md:flex max-w-screen-xl mx-auto">
+            <div class="pl-4 text-blue-300">
+                <p class="text-[#8750fc]">02</p>
+                <h2 class="text-4xl font-bold text-white z-10 mb-2">Back End</h2>
+                <p class="text-justify md: pe-8">A Back-End Developer builds and maintains the server, database, and application logic that power websites and apps behind the scenes. They focus on server-side programming, database management, and API creation, ensuring data is processed efficiently and securely. Using languages like Python, Java, and Node.js, back-end developers enable the functionality, speed, and reliability of digital applications.</p>
+                <ul class="md: pe-8">
+                    <li>I specialize in building powerful, secure, and efficient back-end systems that ensure your applications run smoothly and reliably.</li>
+                    <li>From database management to server-side logic, I optimize your application’s core functionality for speed and scalability.</li>
+                    <li>With a focus on robust architecture and seamless integration, I make sure your platform handles data and user interactions effortlessly.</li>
+                </ul>
+            </div>
+            <div class="p-4 items-center flex">
+                <img class="min-w-64 mt-3" src="Source/back_end.png" alt="">
+            </div>
+          </div>
+          <hr class="m-4">
+    
+          
+          <div class="md:flex max-w-screen-xl mx-auto">
+            <div class="pl-4 text-blue-300">
+                <p class="text-[#8750fc]">03</p>
+                <h2 class="text-4xl font-bold text-white z-10 mb-2">Android Development</h2>
+                <p class="text-justify md:pe-8">An Android Developer is a skilled professional who designs, builds, and maintains applications for devices running the Android operating system. They use languages like Java or Kotlin and work with Android Studio to create functional, user-friendly apps. Their role includes optimizing app performance, implementing responsive designs for different devices, integrating APIs, and ensuring apps meet security and usability standards. Android developers stay updated with the latest Android updates and tools to deliver seamless, innovative experiences tailored to Android users.</p>
+                <ul class="md:pe-8">
+                    <li>I specialize in building efficient, high-performing Android apps that deliver seamless user experiences and meet complex business needs.</li>
+                    <li>With a focus on scalable and secure back-end solutions, I ensure your app handles data securely and performs flawlessly under high loads.</li>
+                    <li>From API integration to custom feature development, I create Android solutions tailored to enhance your brand and drive engagement.</li>
+                </ul>
+            </div>
+            <div class="p-4 items-center flex">
+                <img class="min-w-64 mt-3" src="Source/androind_dev.png" alt="">
+            </div>
+          </div>
+          <hr class="m-4">
+    
+    
+          
+          <div class="md:flex max-w-screen-xl mx-auto">
+            <div class="pl-4 text-blue-300">
+                <p class="text-[#8750fc]">04</p>
+                <h2 class="text-4xl font-bold text-white z-10 mb-2">Researcher</h2>
+                <p class="text-justify  md:pe-8">As a researcher, I’m dedicated to discovering new insights, analyzing data, and contributing to the advancement of knowledge in my field. I approach each project with a rigorous methodology, aiming to produce meaningful results that can impact both theory and practice. My focus is on precision, innovative problem-solving, and communicating complex findings in an accessible way.</p>
+                <ul class="md:pe-8">
+                    <li>As a dedicated researcher, I’m passionate about uncovering insights that drive meaningful change.</li>
+                    <li>My work bridges data and innovation, transforming complex challenges into clear, actionable solutions.</li>
+                    <li>Join me in exploring discoveries that push the boundaries of knowledge and create real-world impact.</li>
+                </ul>
+            </div>
+            <div class="p-4 items-center flex">
+                <img class="w-[423px] h-[301] min-w-64 mt-3" src="Source/researcher.jpg" alt="">
+            </div>
+          </div>
+          <hr class="m-4">
+
+
+
+          </div>
+    
+          
+    
+
+    </main>
+    <footer>
+        <p class="text-center text-white mb-7 font-bold">@2024 Web Developer</p>
+
+    </footer>
+
+    <script>
+        // Get elements
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const popupNavbar = document.getElementById('popup-navbar');
+
+        // Toggle the popup navbar visibility when the hamburger icon is clicked
+        hamburgerIcon.addEventListener('click', () => {
+            popupNavbar.classList.remove('hidden');  // Show the popup menu
+        });
+
+        // Close the popup menu when clicking outside of the popup content
+        document.addEventListener('click', (e) => {
+            if (!popupNavbar.contains(e.target) && !hamburgerIcon.contains(e.target)) {
+                popupNavbar.classList.add('hidden');  // Hide the popup menu if clicked outside
+            }
+        });
+    </script>
+    
+      
+
+      
+      
+</body>
+</html>

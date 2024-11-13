@@ -1,0 +1,40 @@
+body{
+    background-color: #0b053b;
+    font-family: 'Space Grotesk', sans-serif; 
+}
+header {
+    align-items: center;
+    width: 100%; 
+}
+h2{
+    font-family: Poppins Bold; 
+}
+
+a {
+    text-decoration: none;}
+
+a:hover {
+    color: #1d00f8;
+    cursor: pointer;
+}
+
+.hey{
+    height: 200px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #ffffff; /* 2px thick black line */
+    margin: 20px 20px; /* Space above and below the line */
+}
+  ul {
+    list-style-type: none; /* Removes default list bullets */
+    padding-left: 1rem; /* Adds padding to the left for spacing */
+  }
+  
+  li::before {
+    content: '➤';
+    color: #ffffff; /* Color of the symbol */
+    font-size: 1.5rem; /* Adjust the size of the symbol */
+  }
+  
